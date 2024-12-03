@@ -1,1 +1,18 @@
-<h1>Example App: Home</h1>
+<div>
+    <button class="sign-in-button">Sign In</button>
+</div>
+
+<h1>Doctors List</h1>
+<div class="doctor-list">
+    {{#each doctors}}
+        <div class="doctor-card">
+            <a href="/doctor/{{id}}">
+                <img src="{{photo}}" alt="{{name}}">
+            </a>
+            <h3>{{name}}</h3>
+            <p>Speciality: {{speciality}}</p>
+            <p>Age: {{age}}</p>
+            <p>Price per minute: ${{price}}</p>
+        </div>
+    {{/each}}
+</div>

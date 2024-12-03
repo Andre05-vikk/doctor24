@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Example App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor24</title>
+    <!-- Lisa Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<!-- Navigation buttons -->
+<div class="d-flex justify-content-end">
+    <button class="btn btn-primary" id="sign-in-button" data-bs-toggle="modal" data-bs-target="#sign-in-modal">Sign In</button>
+    <button class="btn btn-primary" id="sign-up-button" data-bs-toggle="modal" data-bs-target="#sign-up-modal">Sign Up</button>
+</div>
+<!-- Content area -->
+<div class="content">
+    {{{body}}} <!-- Rendered Handlebars content -->
+</div>
 
-{{{body}}}
-
+<!-- Lisa Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
